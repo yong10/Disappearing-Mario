@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+        button{ 
+            width: 80px;
+            height: 40px;
+        }
+        img{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img class="pic" src="Mario.png" width="200" height="200" >
+    <img class="pic" src="Mario.png" width="200" height="200" >
+    <img class="pic" src="Mario.png" width="200" height="200" >
+    <img class="pic" src="Mario.png" width="200" height="200" ><br>
+    <img class="pic" src="Mario.png" width="200" height="200" >
+    <img class="pic" src="Mario.png" width="200" height="200" >
+    <img class="pic" src="Mario.png" width="200" height="200" >
+    <img class="pic" src="Mario.png" width="200" height="200" ><br>
+    <button width="150" height="50">Restore</button>
+    <script>
+    $(".pic").click(function(){
+        $(this).css("opacity", "0");
+    });
+    $("button").click(function(){
+        $(".pic").css("opacity", "1");
+    });
+        
+    </script>
+</body>
+</html>
